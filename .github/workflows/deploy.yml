@@ -1,12 +1,15 @@
+name: Deploy GitHub Pages
+
 permissions:
   id-token: write
   pages: write
   contents: read
-  name: Deploy GitHub Pages
+
 on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
